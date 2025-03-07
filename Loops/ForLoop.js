@@ -24,3 +24,16 @@ for(let z=-20;z<=5;z++){
 for(let x=20;x>=0;x--){
     console.log(x)
 }
+//printing  2nd table
+for(let x=2;x<=2;x++){
+    for(let y=1;y<=10;y++){
+    if(x%2===0){
+        console.log(x+"x"+y+"="+x*y)
+    }
+}
+}
+for(let g=3;g<=3;g++){
+    for(let h=1;h<=10;h++){
+        console.log(g+"x"+h+"="+g*h)
+    }
+}

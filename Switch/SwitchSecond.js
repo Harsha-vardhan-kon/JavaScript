@@ -7,6 +7,7 @@ switch(true){
         console.log("It is a good movie");
         break;
         case movieName==="basha" && heroName==="rajini":
+             statement="<center><h2>BlockBuster</h2></center>"
             console.log("BlockBuster");
             break;
             default : ("none of the above")

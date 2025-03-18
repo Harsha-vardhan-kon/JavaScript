@@ -1,0 +1,25 @@
+
+//length of the string
+let nameOfCar ='harsha';
+console.log(nameOfCar.length)
+
+//spilt (which makes string into array)
+let nameOfV="harsha is the one of the human"
+console.log(nameOfV.split(' '));
+
+//Trim (it is used to cut the blank space around the words)
+let nameOfH="    harsha   is   a   great  human   "
+console.log(nameOfH.trim( ));
+
+//charAt (it is used to show where the char is present)
+let nameOfO="harsha";
+console.log(nameOfO.charAt(0))
+
+//toUpperCase (it is used to convert the data into upperCase)
+let nameOfS="Harsha vardhan"
+console.log(nameOfS.toUpperCase())
+
+//lowercase (it is used convert the data into lowerCase)
+let nameOfG="HARSHA VARDHAN"
+
+console.log(nameOfG.toLowerCase())

@@ -30,8 +30,10 @@ for(let x=2;x<=2;x++){
     if(x%2===0){
         console.log(x+"x"+y+"="+x*y)
     }
-}
-}
+}}
+
+//printing 3rd table
+
 //printing 3rd table
 for(let g=3;g<=3;g++){
     for(let h=1;h<=10;h++){

@@ -25,3 +25,10 @@ while (!age || age < minAge) {
 }
 console.log("Access granted.");
 
+let countdown = 5;
+while (countdown > 0) {
+  console.log("Time left:", countdown);
+  countdown--;
+}
+console.log("Blast off!");
+

@@ -26,3 +26,8 @@ console.log(nameOfG.toLowerCase())
 //replace (it is used to replace the words)
 let nameOfL="harshavardhan"
 console.log(nameOfL.replace("harshavardhan","konduru"))//first we need to write the old value then camma new value
+
+//set (which is used to delete the duplicates)
+let numbers=[1,2,3,3,2,1,2,9,5,6];
+let newNumbers=[...new Set(numbers)];//set is class in js so we need  use new
+console.log(newNumbers)

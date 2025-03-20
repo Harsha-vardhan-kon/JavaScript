@@ -1,13 +1,13 @@
- x = 0
- i = 0
+  x = 0
+  i = 0
 
- do {
-   x = x + i;
-   console.log(x)
-   i++;
- } while (i < 5);
+  do {
+    x = x + i;
+    console.log(x)
+    i++;
+  } while (i < 5);
 
-let z = 1;
+let z = -10;
 do {
     console.log(z);
     z++;
@@ -20,4 +20,11 @@ do {
 } while (number <= 0);
 
 console.log("You entered:", number);
+
+
+do{
+  let i=10;
+  console.log(i);
+  i++
+}while(i<=20)
 

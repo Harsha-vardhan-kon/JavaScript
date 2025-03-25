@@ -16,6 +16,11 @@ let library = [
     }
 ];
 
+function me(){
+    console.log(library.map(book=>book.author))
+}
+me();
+
 
 function getAvailableBooks() {
     console.log(library.map(Books=>Books.title))
@@ -39,4 +44,6 @@ function searchBook(title){
 
 
 searchBook('The Lord of The Rings')
+
+
 

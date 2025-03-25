@@ -1,6 +1,6 @@
 //we can create objects in 3 ways
 //1.object literal ,2.using new keyword,3.using constructor
-
+//1.object literal
  const arr=({
        name:'harsha',
        age:22,
@@ -11,6 +11,8 @@ console.log(arr.name)
 console.log(arr.age)
 
 
+
+
 const har=new Object({  //using new keyword
     name:'babu',
     age:30
@@ -18,6 +20,7 @@ const har=new Object({  //using new keyword
 har.age=40;
 console.log(har.name) 
 console.log(har.age)
+
 
 //keys,values,
 const valu=({

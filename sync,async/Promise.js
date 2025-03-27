@@ -15,4 +15,4 @@ const checkWeather=city=>{
  })
  .catch((error)=>{
     console.log(error)
- }) //for checking the city temparature
+ }) 

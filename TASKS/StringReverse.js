@@ -2,16 +2,27 @@
 //Example:
 //Input: "hello"
 //Output: "olleh"
-function reverse(str) {
+
+
+function str1(str) {
      let reversed = "";
      for (let i = str.length - 1; i >= 0; i--) {
-      reversed += str[i];
+         reversed += str[i]; 
+     }
+     return reversed;
  }
- return reversed;
+ 
 
-}
+ console.log(str1("harsha is")); 
 
-console.log(reverse("hello")); 
+ 
+
+
+  
+  
+
+
+
 
 
 

@@ -16,16 +16,8 @@ let library = [
     }
 ];
 
-function me(){
-    console.log(library.map(book=>book.author))
-}
-me();
 
 
-function getAvailableBooks() {
-    console.log(library.map(Books=>Books.title))
-}
-getAvailableBooks(); 
 
 function searchBook(title){
     if(title==='Solo Leveling'){

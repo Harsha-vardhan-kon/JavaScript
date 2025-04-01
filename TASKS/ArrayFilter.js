@@ -61,3 +61,5 @@ const K = 4;
 
 console.log(filterArray(arr1, K)); 
 console.log(filterArray(arr2, K)); 
+
+

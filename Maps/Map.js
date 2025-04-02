@@ -3,6 +3,8 @@ const obj1=new Map([
 ])
 obj1.set("name2","vardhan")//set is used to set the value to map 
 obj1.delete("name")//delete is used to delete the required key
+obj1.size;//which is used to get the size of the map
+obj1.has("name")//it provide the boolean ans as true or false
 obj1.clear();//clear iis used to clear everything
 console.log(obj1.get("name"));//get is used to get the requried key
 console.log(obj1.get("name2"));

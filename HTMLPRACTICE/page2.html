@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <style>
+        /* Sidebar Styling */
+        #sidebar {
+            position: fixed;
+            left: -250px; /* Initially hidden */
+            top: 0;
+            width: 250px; /* Sidebar width */
+            height: 100vh; /* Full height */
+            background-color: #333;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: left 0.3s ease-in-out; /* Smooth animation */
+        }
+
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #sidebar a:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        /* Main content */
+        #content {
+            margin-left: 0; /* Default for mobile */
+            padding: 20px;
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        /* Menu Button */
+        #menu-btn {
+            font-size: 24px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+
+        /* Show Sidebar */
+        .sidebar-open {
+            left: 0 !important;
+        }
+
+        /* Push content when sidebar is open */
+        .content-shift {
+            margin-left: 250px !important;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            #sidebar {
+                left: 0; /* Always visible on desktop */
+            }
+            #menu-btn {
+                display: none; /* Hide button on larger screens */
+            }
+            #content {
+                margin-left: 250px; /* Content adjusts for sidebar */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Button (For Mobile) -->
+    <button id="menu-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <a href="javascript:void(0)" onclick="toggleSidebar()">✖ Close</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content area.</p>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+
+            if (sidebar.classList.contains("sidebar-open")) {
+                sidebar.classList.remove("sidebar-open");
+                content.classList.remove("content-shift");
+            } else {
+                sidebar.classList.add("sidebar-open");
+                content.classList.add("content-shift");
+            }
+        }
+    </script>
+
+</body>
+</html>
